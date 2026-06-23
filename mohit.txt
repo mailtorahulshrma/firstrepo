@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 hi how are you.
+=======
+hi how are you. This is very urgent.
+
+>>>>>>> main
