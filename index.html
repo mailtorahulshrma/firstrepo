@@ -4,172 +4,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perfect Match Matrimony</title>
+<title>Cricket Accessories Store</title>
 
 <style>
 body{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f8f8f8;
+    background:#f5f5f5;
 }
 
 header{
-    background:#c2185b;
+    background:#0d6efd;
     color:white;
-    padding:20px 60px;
+    padding:15px 50px;
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-.logo{
-    font-size:32px;
-    font-weight:bold;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
-    font-weight:500;
+    margin-left:20px;
 }
 
 .hero{
-    height:80vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600');
-    background-size:cover;
-    background-position:center;
+    background:url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80') center/cover;
+    height:400px;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+    color:white;
     text-align:center;
-    color:white;
 }
 
-.hero-content h1{
-    font-size:55px;
-    margin-bottom:15px;
+.hero h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.5);
+    padding:15px;
 }
 
-.hero-content p{
-    font-size:20px;
-    margin-bottom:25px;
+.products{
+    padding:50px;
 }
 
-.search-box{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    width:90%;
-    max-width:900px;
-    margin:auto;
+.products h2{
+    text-align:center;
+    margin-bottom:30px;
 }
 
-.search-box select,
-.search-box input{
-    padding:12px;
-    width:30%;
-    margin:8px;
-    border:1px solid #ddd;
-    border-radius:8px;
-}
-
-.search-box button{
-    padding:12px 25px;
-    background:#c2185b;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-.stats{
+.product-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
-    padding:50px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
-}
-
-.card h2{
-    color:#c2185b;
-    font-size:38px;
-}
-
-.card p{
-    margin-top:10px;
-    color:#555;
-}
-
-.section-title{
-    text-align:center;
-    font-size:36px;
-    color:#c2185b;
-    margin-top:20px;
-}
-
-.profiles{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    padding:40px;
-}
-
-.profile{
-    background:white;
-    border-radius:15px;
+    border-radius:10px;
     overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.profile img{
+.card img{
     width:100%;
-    height:300px;
+    height:220px;
     object-fit:cover;
 }
 
-.profile-content{
-    padding:20px;
+.card-content{
+    padding:15px;
+    text-align:center;
 }
 
-.profile h3{
-    color:#c2185b;
-}
-
-.profile p{
-    margin-top:8px;
-    color:#666;
-}
-
-.profile button{
-    margin-top:15px;
-    background:#c2185b;
+.card button{
+    background:#0d6efd;
     color:white;
     border:none;
-    padding:10px 18px;
-    border-radius:8px;
+    padding:10px 20px;
+    margin-top:10px;
     cursor:pointer;
-    font-size:18px;
+    border-radius:5px;
 }
 
 footer{
-    background:#880e4f;
+    background:#222;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:20px;
+    margin-top:40px;
 }
 </style>
 
@@ -177,98 +105,56 @@ footer{
 <body>
 
 <header>
-    <div class="logo">❤️ Perfect Match</div>
-
+    <h2>🏏 Cricket Accessories</h2>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Search</a>
-        <a href="#">Success Stories</a>
-        <a href="#">Membership</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Find Your Life Partner</h1>
-        <p>Thousands of verified profiles waiting for their perfect match.</p>
-
-        <div class="search-box">
-            <select>
-                <option>Looking For</option>
-                <option>Bride</option>
-                <option>Groom</option>
-            </select>
-
-            <input type="text" placeholder="Age">
-
-            <input type="text" placeholder="City">
-
-            <br>
-
-            <button>Find Match</button>
-        </div>
-    </div>
+    <h1>Premium Cricket Accessories Store</h1>
 </section>
 
-<section class="stats">
-    <div class="card">
-        <h2>50,000+</h2>
-        <p>Verified Profiles</p>
-    </div>
+<section class="products">
+    <h2>Featured Products</h2>
 
-    <div class="card">
-        <h2>15,000+</h2>
-        <p>Successful Marriages</p>
-    </div>
+    <div class="product-grid">
 
-    <div class="card">
-        <h2>24x7</h2>
-        <p>Customer Support</p>
-    </div>
-</section>
-
-<h2 class="section-title">Featured Profiles</h2>
-
-<section class="profiles">
-
-    <div class="profile">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800">
-        <div class="profile-content">
-            <h3>Priya Sharma</h3>
-            <p>Age: 26</p>
-            <p>Software Engineer</p>
-            <p>Delhi</p>
-            <button>View Profile</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1624880357913-a8539238245b?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Cricket Bat</h3>
+                <p>₹3,999</p>
+                <button>Buy Now</button>
+            </div>
         </div>
-    </div>
 
-    <div class="profile">
-        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800">
-        <div class="profile-content">
-            <h3>Rahul Verma</h3>
-            <p>Age: 29</p>
-            <p>Cloud Engineer</p>
-            <p>Gurgaon</p>
-            <button>View Profile</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Batting Gloves</h3>
+                <p>₹799</p>
+                <button>Buy Now</button>
+            </div>
         </div>
-    </div>
 
-    <div class="profile">
-        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=800">
-        <div class="profile-content">
-            <h3>Anjali Gupta</h3>
-            <p>Age: 27</p>
-            <p>Doctor</p>
-            <p>Chandigarh</p>
-            <button>View Profile</button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Cricket Helmet</h3>
+                <p>₹1,499</p>
+                <button>Buy Now</button>
+            </div>
         </div>
-    </div>
 
+    </div>
 </section>
 
 <footer>
-    © 2026 Perfect Match Matrimony | Made with ❤️
+    <p>© 2026 Cricket Accessories Store | All Rights Reserved</p>
 </footer>
 
 </body>
