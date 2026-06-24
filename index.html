@@ -3,189 +3,270 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Library Management System</title>
+<title>Perfect Match Matrimony</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#f4f6f9;
+    background:#f8f8f8;
 }
 
-.header{
-    background:#1e3a8a;
+header{
+    background:#c2185b;
     color:white;
-    padding:20px;
-    text-align:center;
-    font-size:28px;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
     font-weight:bold;
 }
 
-.sidebar{
-    position:fixed;
-    width:220px;
-    height:100%;
-    background:#111827;
-    padding-top:20px;
-}
-
-.sidebar a{
-    display:block;
+nav a{
     color:white;
-    padding:15px 20px;
     text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
 }
 
-.sidebar a:hover{
-    background:#2563eb;
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
 }
 
-.main{
-    margin-left:220px;
-    padding:30px;
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
 }
 
-.cards{
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.search-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+.search-box select,
+.search-box input{
+    padding:12px;
+    width:30%;
+    margin:8px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.search-box button{
+    padding:12px 25px;
+    background:#c2185b;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.stats{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
+    padding:50px;
 }
 
 .card{
     background:white;
     padding:25px;
-    border-radius:12px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    border-radius:15px;
     text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 .card h2{
-    color:#1e3a8a;
-    margin-bottom:10px;
+    color:#c2185b;
+    font-size:38px;
 }
 
 .card p{
-    font-size:28px;
-    font-weight:bold;
+    margin-top:10px;
+    color:#555;
 }
 
-table{
-    width:100%;
-    margin-top:30px;
-    border-collapse:collapse;
-    background:white;
-}
-
-table th{
-    background:#1e3a8a;
-    color:white;
-    padding:12px;
-}
-
-table td{
-    padding:12px;
-    border:1px solid #ddd;
-}
-
-.footer{
-    margin-top:30px;
+.section-title{
     text-align:center;
-    color:gray;
+    font-size:36px;
+    color:#c2185b;
+    margin-top:20px;
+}
+
+.profiles{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.profile{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.profile img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.profile-content{
+    padding:20px;
+}
+
+.profile h3{
+    color:#c2185b;
+}
+
+.profile p{
+    margin-top:8px;
+    color:#666;
+}
+
+.profile button{
+    margin-top:15px;
+    background:#c2185b;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    background:#880e4f;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 </style>
 </head>
-
 <body>
 
-<div class="header">
-📚 Library Management System
-</div>
+<header>
+    <div class="logo">❤️ Perfect Match</div>
 
-<div class="sidebar">
-    <a href="#">🏠 Dashboard</a>
-    <a href="#">📖 Books</a>
-    <a href="#">👨‍🎓 Members</a>
-    <a href="#">📥 Issue Book</a>
-    <a href="#">📤 Return Book</a>
-    <a href="#">💰 Fine Records</a>
-    <a href="#">📊 Reports</a>
-    <a href="#">⚙ Settings</a>
-</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Success Stories</a>
+        <a href="#">Membership</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-<div class="main">
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Your Life Partner</h1>
+        <p>Thousands of verified profiles waiting for their perfect match.</p>
 
-    <div class="cards">
+        <div class="search-box">
+            <select>
+                <option>Looking For</option>
+                <option>Bride</option>
+                <option>Groom</option>
+            </select>
 
-        <div class="card">
-            <h2>Total Books</h2>
-            <p>12,450</p>
+            <input type="text" placeholder="Age">
+
+            <input type="text" placeholder="City">
+
+            <br>
+
+            <button>Find Match</button>
         </div>
+    </div>
+</section>
 
-        <div class="card">
-            <h2>Issued Books</h2>
-            <p>1,120</p>
-        </div>
-
-        <div class="card">
-            <h2>Members</h2>
-            <p>2,340</p>
-        </div>
-
-        <div class="card">
-            <h2>Overdue Books</h2>
-            <p>58</p>
-        </div>
-
+<section class="stats">
+    <div class="card">
+        <h2>50,000+</h2>
+        <p>Verified Profiles</p>
     </div>
 
-    <table>
-        <tr>
-            <th>Book ID</th>
-            <th>Book Name</th>
-            <th>Author</th>
-            <th>Status</th>
-        </tr>
-
-        <tr>
-            <td>B101</td>
-            <td>Cloud Computing</td>
-            <td>Rahul Sharma</td>
-            <td>Available</td>
-        </tr>
-
-        <tr>
-            <td>B102</td>
-            <td>Azure Fundamentals</td>
-            <td>Microsoft</td>
-            <td>Issued</td>
-        </tr>
-
-        <tr>
-            <td>B103</td>
-            <td>Terraform Guide</td>
-            <td>HashiCorp</td>
-            <td>Available</td>
-        </tr>
-
-        <tr>
-            <td>B104</td>
-            <td>Linux Administration</td>
-            <td>Red Hat</td>
-            <td>Issued</td>
-        </tr>
-
-    </table>
-
-    <div class="footer">
-        © 2026 Library Management System | Designed by Rahul
+    <div class="card">
+        <h2>15,000+</h2>
+        <p>Successful Marriages</p>
     </div>
 
-</div>
+    <div class="card">
+        <h2>24x7</h2>
+        <p>Customer Support</p>
+    </div>
+</section>
+
+<h2 class="section-title">Featured Profiles</h2>
+
+<section class="profiles">
+
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800">
+        <div class="profile-content">
+            <h3>Priya Sharma</h3>
+            <p>Age: 26</p>
+            <p>Software Engineer</p>
+            <p>Delhi</p>
+            <button>View Profile</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800">
+        <div class="profile-content">
+            <h3>Rahul Verma</h3>
+            <p>Age: 29</p>
+            <p>Cloud Engineer</p>
+            <p>Gurgaon</p>
+            <button>View Profile</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=800">
+        <div class="profile-content">
+            <h3>Anjali Gupta</h3>
+            <p>Age: 27</p>
+            <p>Doctor</p>
+            <p>Chandigarh</p>
+            <button>View Profile</button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Perfect Match Matrimony | Made with ❤️
+</footer>
 
 </body>
 </html>
