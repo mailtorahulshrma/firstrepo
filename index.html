@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Library Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#555;
+    font-size:18px;
+}
+
+.search-box{
+    margin-top:30px;
+}
+
+.search-box input{
+    width:60%;
+    max-width:600px;
+    padding:15px;
+    border:2px solid #1e3a8a;
+    border-radius:30px;
+    font-size:16px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#1e3a8a;
+    font-size:35px;
+}
+
+.card p{
+    margin-top:10px;
+    color:#555;
+}
+
+.section-title{
+    text-align:center;
+    margin:20px 0;
+    color:#1e3a8a;
+    font-size:32px;
+}
+
+.books{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.book{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.book h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.book p{
+    color:#666;
+    margin-bottom:8px;
+}
+
+.book button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.book button:hover{
+    background:#2563eb;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">📚 Smart Library</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Members</a>
+        <a href="#">Issue Book</a>
+        <a href="#">Reports</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Smart Library Portal</h1>
+    <p>Manage books, members and library operations from one place.</p>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search books by title, author or category">
+    </div>
+</section>
+
+<section class="stats">
+
+    <div class="card">
+        <h2>12,450</h2>
+        <p>Total Books</p>
+    </div>
+
+    <div class="card">
+        <h2>2,340</h2>
+        <p>Registered Members</p>
+    </div>
+
+    <div class="card">
+        <h2>1,120</h2>
+        <p>Books Issued</p>
+    </div>
+
+    <div class="card">
+        <h2>58</h2>
+        <p>Overdue Books</p>
+    </div>
+
+</section>
+
+<h2 class="section-title">Recently Added Books</h2>
+
+<section class="books">
+
+    <div class="book">
+        <h3>Cloud Computing</h3>
+        <p>Author: Rahul Sharma</p>
+        <p>Status: Available</p>
+        <button>Issue Book</button>
+    </div>
+
+    <div class="book">
+        <h3>Terraform Mastery</h3>
+        <p>Author: HashiCorp</p>
+        <p>Status: Available</p>
+        <button>Issue Book</button>
+    </div>
+
+    <div class="book">
+        <h3>Azure Fundamentals</h3>
+        <p>Author: Microsoft</p>
+        <p>Status: Issued</p>
+        <button>View Details</button>
+    </div>
+
+    <div class="book">
+        <h3>Linux Administration</h3>
+        <p>Author: Red Hat</p>
+        <p>Status: Available</p>
+        <button>Issue Book</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Smart Library Management System | Designed by Rahul
+</footer>
+
+</body>
+</html>
