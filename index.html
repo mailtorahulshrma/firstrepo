@@ -1,2 +1,191 @@
-<h1>Hi this is Local host</h1>
-<h2>Hi this is again Local host</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.header{
+    background:#1e3a8a;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.sidebar{
+    position:fixed;
+    width:220px;
+    height:100%;
+    background:#111827;
+    padding-top:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+}
+
+.main{
+    margin-left:220px;
+    padding:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#1e3a8a;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    color:gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+📚 Library Management System
+</div>
+
+<div class="sidebar">
+    <a href="#">🏠 Dashboard</a>
+    <a href="#">📖 Books</a>
+    <a href="#">👨‍🎓 Members</a>
+    <a href="#">📥 Issue Book</a>
+    <a href="#">📤 Return Book</a>
+    <a href="#">💰 Fine Records</a>
+    <a href="#">📊 Reports</a>
+    <a href="#">⚙ Settings</a>
+</div>
+
+<div class="main">
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Total Books</h2>
+            <p>12,450</p>
+        </div>
+
+        <div class="card">
+            <h2>Issued Books</h2>
+            <p>1,120</p>
+        </div>
+
+        <div class="card">
+            <h2>Members</h2>
+            <p>2,340</p>
+        </div>
+
+        <div class="card">
+            <h2>Overdue Books</h2>
+            <p>58</p>
+        </div>
+
+    </div>
+
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>B101</td>
+            <td>Cloud Computing</td>
+            <td>Rahul Sharma</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>B102</td>
+            <td>Azure Fundamentals</td>
+            <td>Microsoft</td>
+            <td>Issued</td>
+        </tr>
+
+        <tr>
+            <td>B103</td>
+            <td>Terraform Guide</td>
+            <td>HashiCorp</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>B104</td>
+            <td>Linux Administration</td>
+            <td>Red Hat</td>
+            <td>Issued</td>
+        </tr>
+
+    </table>
+
+    <div class="footer">
+        © 2026 Library Management System | Designed by Rahul
+    </div>
+
+</div>
+
+</body>
+</html>
