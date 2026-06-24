@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Library Portal</title>
+<title>Perfect Match Matrimony</title>
 
 <style>
 *{
@@ -14,78 +14,98 @@
 }
 
 body{
-    background:#eef2f7;
+    background:#f8f8f8;
 }
 
 header{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    background:#c2185b;
     color:white;
-    padding:20px 50px;
+    padding:20px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
 .logo{
-    font-size:28px;
+    font-size:32px;
     font-weight:bold;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:25px;
     font-weight:500;
 }
 
 .hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-    padding:70px 20px;
-    background:white;
+    color:white;
 }
 
-.hero h1{
-    font-size:48px;
-    color:#1e3a8a;
+.hero-content h1{
+    font-size:55px;
     margin-bottom:15px;
 }
 
-.hero p{
-    color:#555;
-    font-size:18px;
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
 }
 
 .search-box{
-    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:90%;
+    max-width:900px;
+    margin:auto;
 }
 
+.search-box select,
 .search-box input{
-    width:60%;
-    max-width:600px;
-    padding:15px;
-    border:2px solid #1e3a8a;
-    border-radius:30px;
-    font-size:16px;
+    padding:12px;
+    width:30%;
+    margin:8px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.search-box button{
+    padding:12px 25px;
+    background:#c2185b;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
 }
 
 .stats{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
-    padding:40px;
+    padding:50px;
 }
 
 .card{
     background:white;
-    border-radius:15px;
     padding:25px;
+    border-radius:15px;
     text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 .card h2{
-    color:#1e3a8a;
-    font-size:35px;
+    color:#c2185b;
+    font-size:38px;
 }
 
 .card p{
@@ -95,140 +115,157 @@ nav a{
 
 .section-title{
     text-align:center;
-    margin:20px 0;
-    color:#1e3a8a;
-    font-size:32px;
+    font-size:36px;
+    color:#c2185b;
+    margin-top:20px;
 }
 
-.books{
+.profiles{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:30px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
 }
 
-.book{
+.profile{
     background:white;
-    padding:20px;
     border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
-.book h3{
-    color:#1e3a8a;
-    margin-bottom:10px;
+.profile img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
 }
 
-.book p{
+.profile-content{
+    padding:20px;
+}
+
+.profile h3{
+    color:#c2185b;
+}
+
+.profile p{
+    margin-top:8px;
     color:#666;
-    margin-bottom:8px;
 }
 
-.book button{
-    background:#1e3a8a;
+.profile button{
+    margin-top:15px;
+    background:#c2185b;
     color:white;
     border:none;
-    padding:10px 20px;
+    padding:10px 18px;
     border-radius:8px;
     cursor:pointer;
 }
 
-.book button:hover{
-    background:#2563eb;
-}
-
 footer{
-    background:#0f172a;
+    background:#880e4f;
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:40px;
+    padding:25px;
 }
 </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">📚 Smart Library</div>
+    <div class="logo">❤️ Perfect Match</div>
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">Books</a>
-        <a href="#">Members</a>
-        <a href="#">Issue Book</a>
-        <a href="#">Reports</a>
+        <a href="#">Search</a>
+        <a href="#">Success Stories</a>
+        <a href="#">Membership</a>
+        <a href="#">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Welcome to Smart Library Portal</h1>
-    <p>Manage books, members and library operations from one place.</p>
+    <div class="hero-content">
+        <h1>Find Your Life Partner</h1>
+        <p>Thousands of verified profiles waiting for their perfect match.</p>
 
-    <div class="search-box">
-        <input type="text" placeholder="Search books by title, author or category">
+        <div class="search-box">
+            <select>
+                <option>Looking For</option>
+                <option>Bride</option>
+                <option>Groom</option>
+            </select>
+
+            <input type="text" placeholder="Age">
+
+            <input type="text" placeholder="City">
+
+            <br>
+
+            <button>Find Match</button>
+        </div>
     </div>
 </section>
 
 <section class="stats">
-
     <div class="card">
-        <h2>12,450</h2>
-        <p>Total Books</p>
+        <h2>50,000+</h2>
+        <p>Verified Profiles</p>
     </div>
 
     <div class="card">
-        <h2>2,340</h2>
-        <p>Registered Members</p>
+        <h2>15,000+</h2>
+        <p>Successful Marriages</p>
     </div>
 
     <div class="card">
-        <h2>1,120</h2>
-        <p>Books Issued</p>
+        <h2>24x7</h2>
+        <p>Customer Support</p>
     </div>
-
-    <div class="card">
-        <h2>58</h2>
-        <p>Overdue Books</p>
-    </div>
-
 </section>
 
-<h2 class="section-title">Recently Added Books</h2>
+<h2 class="section-title">Featured Profiles</h2>
 
-<section class="books">
+<section class="profiles">
 
-    <div class="book">
-        <h3>Cloud Computing</h3>
-        <p>Author: Rahul Sharma</p>
-        <p>Status: Available</p>
-        <button>Issue Book</button>
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800">
+        <div class="profile-content">
+            <h3>Priya Sharma</h3>
+            <p>Age: 26</p>
+            <p>Software Engineer</p>
+            <p>Delhi</p>
+            <button>View Profile</button>
+        </div>
     </div>
 
-    <div class="book">
-        <h3>Terraform Mastery</h3>
-        <p>Author: HashiCorp</p>
-        <p>Status: Available</p>
-        <button>Issue Book</button>
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800">
+        <div class="profile-content">
+            <h3>Rahul Verma</h3>
+            <p>Age: 29</p>
+            <p>Cloud Engineer</p>
+            <p>Gurgaon</p>
+            <button>View Profile</button>
+        </div>
     </div>
 
-    <div class="book">
-        <h3>Azure Fundamentals</h3>
-        <p>Author: Microsoft</p>
-        <p>Status: Issued</p>
-        <button>View Details</button>
-    </div>
-
-    <div class="book">
-        <h3>Linux Administration</h3>
-        <p>Author: Red Hat</p>
-        <p>Status: Available</p>
-        <button>Issue Book</button>
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=800">
+        <div class="profile-content">
+            <h3>Anjali Gupta</h3>
+            <p>Age: 27</p>
+            <p>Doctor</p>
+            <p>Chandigarh</p>
+            <button>View Profile</button>
+        </div>
     </div>
 
 </section>
 
 <footer>
-    © 2026 Smart Library Management System | Designed by Rahul
+    © 2026 Perfect Match Matrimony | Made with ❤️
 </footer>
 
 </body>
